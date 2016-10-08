@@ -5,7 +5,7 @@ Here’s an overview of Markdown syntax that you can use anywhere on GitHub.com 
  
  # This is an `<h1>` tag
  
- #this is an `<h1>` tag#
+ #this is an `<h1>` tag
  
  ## This is an `<h2>` tag
  
