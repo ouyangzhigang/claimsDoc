@@ -1,6 +1,8 @@
 #Syntax guide
 Here’s an overview of Markdown syntax that you can use anywhere on GitHub.com or in your own text files.
 
+MENTION USERNAME: @ouyangzhigang `@ouyangzhigang`     
+
 ##段落和换行
 一个 **Markdown** 段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行（空行的定义是显示上看起来像是空的，便会被视为空行。比方说，若某一行只包含空格和制表符，则该行也会被视为空行）。普通段落不该用空格或制表符来缩进。
 
@@ -117,8 +119,7 @@ Here’s an overview of Markdown syntax that you can use anywhere on GitHub.com 
 </code></pre>
     
 ##partition line
-分隔线
-你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：
+分隔线:你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：
 
 ```
 * * *
@@ -129,14 +130,13 @@ Here’s an overview of Markdown syntax that you can use anywhere on GitHub.com 
 
 - - -
 
-你可以在一行中用三个以上的`星号`、`减号`、`底线`来建立一个分隔线，行内不能有其他东西。你也可以在`星号`或是`减号`中间插入空格。下面每种写法都可以建立分隔线：
+你可以在一行中用三个以上的`星号`、`减号`、`底线`来建立一个分隔线，行内不能有其他东西。你也可以在`*`或是`-`中间插入空格。下面每种写法都可以建立分隔线：
 
-* * *
+* *
 这是分隔线1
 
 ***
 这是分隔线2
-
 
 *****
 这是分割线3
@@ -146,4 +146,100 @@ Here’s an overview of Markdown syntax that you can use anywhere on GitHub.com 
 
 ---------------------------------------
 这是分割线5
+
+```
+
+
+##Strikethrough
+=================================
+Any word wrapped with two tildes (like ~~this~~) will appear crossed out.
+
+`~~this~~`
+
+~~this~~
+
+##Tables
+
+You can create tables by assembling a list of words and dividing them with hyphens `-` (for the first row), and then separating each column with a pipe `|`
+```
+        First Header | Second Header
+        ------------ | -------------
+        Content from cell 1 | Content from cell 2
+        Content in the first column | Content in the second column
+```        
+    
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+##IMAGE
+```
+If you want to embed images, this is how you do it:
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
+```
+
+If you want to embed images, this is how you do it:
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
+
+
+##SHA references
+
+Any reference to a commit’s SHA-1 hash will be automatically converted into a link to that commit on GitHub.
+
+```    
+    16c999e8c71134401a78d4d46435517b2271d6ac
+    mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
+    mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
+```    
+
+16c999e8c71134401a78d4d46435517b2271d6ac
+
+mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
+
+mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
+
+
+##Automatic linking for URLs
+    
+    Any URL (like http://www.github.com/) will be automatically converted into a clickable link.
+
+Any URL (like http://www.github.com/) will be automatically converted into a clickable link.
+
+
+##Extras
+
+```
+GitHub supports many extras in Markdown that help you reference and link to people. If you ever want to direct a comment at someone, you can prefix their name with an @ symbol: Hey @kneath — love your sweater!
+
+But I have to admit, tasks lists are my favorite:
+
+- [x] This is a complete item
+- [ ] This is an incomplete item
+
+When you include a task list in the first comment of an Issue, you will see a helpful progress bar in your list of issues. It works in Pull Requests, too!
+
+And, of course emoji! :sparkles: :camel: :boom:
+```
+
+
+GitHub supports many extras in Markdown that help you reference and link to people. If you ever want to direct a comment at someone, you can prefix their name with an @ symbol: Hey @kneath — love your sweater!
+
+But I have to admit, tasks lists are my favorite:
+
+- [x] This is a complete item
+- [ ] This is an incomplete item
+
+When you include a task list in the first comment of an Issue, you will see a helpful progress bar in your list of issues. It works in Pull Requests, too!
+
+And, of course emoji! :sparkles: :camel: :boom:
+
+
+
+
+
 
